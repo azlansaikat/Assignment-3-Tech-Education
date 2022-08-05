@@ -1,0 +1,40 @@
+/*----------- footer section start -----------*/
+#footer {
+    background-color: black;
+    margin: 0;
+    padding: 2% 5%;
+    color: white;
+}
+
+
+
+#bottom-nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-heading {
+    margin-top: 2rem;
+    margin-bottom: 0px;
+    padding: 1rem;
+}
+
+.fa-brands {
+    font-size: 25px;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-flex;
+    font-size: 15px;
+    list-style: none;
+}
+
+
+
+/*----------- footer section end -----------*/
