@@ -8,14 +8,20 @@
     <title>Tech Education - Assignment-3</title>
     <script src="https://kit.fontawesome.com/6047d59889.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/favicon/favicon.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="./bootstrap-5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <!-----------------------------------------------------------------------------
+         <link rel="stylesheet" href="./bootstrap-5.2.0/css/bootstrap.min.css"> 
+                            used in load shedding times
+    -------------------------------------------------------------------------------->
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!------------- header section start ------------->
     <header class="container">
+
         <!------------- navbar section start ------------->
         <nav class="navbar navbar-expand-lg my-3">
             <div class="container-fluid">
@@ -49,7 +55,7 @@
                             <a class="nav-link" href="#About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
+                            <a class="nav-link" href="#Registration">Register</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -115,11 +121,13 @@
             </div>
         </section>
         <!------------- carousel section end ------------->
+
     </header>
     <!------------- header section end ------------->
 
     <!------------- main section start ------------->
-    <main>
+    <main class="container">
+
         <!------------- course text section start ------------->
         <section class="container" id="Course">
             <div class="bg-light rounded-2 d-flex align-items-center justify-content-center my-5 p-2">
@@ -266,7 +274,7 @@
         <!------------- course section end ------------->
 
         <!------------- registration (Bonus) section start ------------->
-        <section class="container rounded d-lg-flex p-5 bg-primary ">
+        <section id="Registration" class="container rounded d-lg-flex p-5 bg-primary">
             <div class="w-100 w-lg-50 text-lg-start text-center">
                 <h2 class="text-white">Ready to join?</h2>
                 <p class="text-light ">It is a long established fact that a reader will be distracted by the
@@ -278,30 +286,30 @@
                     data-bs-target="#staticBackdrop"><strong>Register
                         Now</strong></button>
             </div>
-            <!---------------- Modal Start---------------->
+            <!---------------- Modal section Start---------------->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Enter Email & Password</h5>
+                            <h5 class="modal-title" id="staticBackdropLabel">Enter Email, Password & Address</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <label for="exampleFormControlInput1" class="form-label">Email address :</label>
                                 <input type="email" class="form-control" id="exampleFormControlInput1"
                                     placeholder="name@example.com">
                             </div>
                             <div class="mb-3">
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Password :</label>
                                 <div class="col-sm-12">
                                     <input type="password" class="form-control" id="inputPassword">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Something About </label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <label for="exampleFormControlTextarea1" class="form-label">Address :</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -331,7 +339,7 @@
         <!------------- faq text section end------------->
 
         <!------------- faq accordion section start------------->
-        <section class="container w-50 pb-5">
+        <section class="container w-75 w-lg-50 w-xl-50 w-xxl-50 pb-5">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -440,41 +448,46 @@
         </div>
         <!------------- Company logo section end------------->
 
-
     </main>
     <!------------- main section end ------------->
 
     <!------------- footer section start ------------->
-    <footer id="About">
-        <center>
-            <h1 class="footer-heading">Tech Education</h1>
-            <p>Office 41, Zawaya Building, Ghala Muscat,<br>Sultanate of Oman</p>
-            <div>
-                <nav>
-                    <ul>
-                        <li><a id="bottom-nav-link" href="#" target="_blank">Privacy Policy &nbsp | &nbsp</a>
-                        </li>
-                        <li><a id="bottom-nav-link" href="#" target="_blank">Terms of Use</a> </li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="font-awesome">
-                <a id="bottom-nav-link" href="https://www.facebook.com" target="_blank"><i
-                        class="fa-brands fa-facebook"></i></a>
-                <a id="bottom-nav-link" href="https://www.messenger.com" target="_blank"><i
-                        class="fa-brands fa-facebook-messenger"></i></a>
-                <a id="bottom-nav-link" href="https://www.whatsapp.com" target="_blank"><i
-                        class="fa-brands fa-whatsapp"></i></a>
-                <a id="bottom-nav-link" href="https://www.instagram.com" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a id="bottom-nav-link" href="https://www.linkedin.com" target="_blank"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-        </center>
+    <footer id="About" class="text-center text-white">
+
+        <h1 class="footer-heading">Tech Education</h1>
+        <p>Office 41, Zawaya Building, Ghala Muscat,<br>Sultanate of Oman</p>
+        <div>
+            <nav>
+                <ul>
+                    <li><a id="bottom-nav-link" href="#" target="_blank">Privacy Policy &nbsp | &nbsp</a>
+                    </li>
+                    <li><a id="bottom-nav-link" href="#" target="_blank">Terms of Use</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="font-awesome" class="text-white">
+            <a id="bottom-nav-link" href="https://www.facebook.com" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a id="bottom-nav-link" href="https://www.messenger.com" target="_blank"><i
+                    class="fa-brands fa-facebook-messenger"></i></a>
+            <a id="bottom-nav-link" href="https://www.whatsapp.com" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+            <a id="bottom-nav-link" href="https://www.instagram.com" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a id="bottom-nav-link" href="https://www.linkedin.com" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+
     </footer>
     <!------------- footer section end --------------->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> -->
-    <script src="./bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+
+    <!------------------------------------------------------------------------------
+              <script src="./bootstrap-5.2.0/js/bootstrap.min.js"></script> 
+                              used in load shedding times
+    -------------------------------------------------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

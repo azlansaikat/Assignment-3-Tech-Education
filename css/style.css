@@ -3,13 +3,12 @@ footer {
     background-color: black;
     margin: 0;
     padding: 2% 5%;
-    color: white;
 }
 
 #bottom-nav-link {
     text-decoration: none;
     font-size: 18px;
-    color: white;
+    color: white !important;
 }
 
 .footer-heading {
